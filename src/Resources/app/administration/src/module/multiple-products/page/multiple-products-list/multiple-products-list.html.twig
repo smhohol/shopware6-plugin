@@ -1,0 +1,16 @@
+{% block multiple_products_list %}
+    <sw-page class="multiple-products-list">
+
+        <template slot="content">
+            {% block multiple_products_list_content %}
+                <sw-entity-listing
+                    v-if="history"
+                    :items="history"
+                    :repository="repository"
+                    :showSelection="false"
+                    :columns="columns">
+                </sw-entity-listing>
+            {% endblock %}
+        </template>
+    </sw-page>
+{% endblock %}
