@@ -1,0 +1,40 @@
+{
+    "name": "shohol/add-multiple-products-to-cart-at-once",
+    "description": "Add multiple products to the shopping cart at once plugin",
+    "type": "shopware-platform-plugin",
+    "version": "v1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergei Hoholin"
+        }
+    ],
+    "require": {
+        "php": ">= 7.2",
+        "shopware/core": "*",
+        "shopware/administration": "*",
+        "shopware/storefront": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shohol\\AddMultipleProductsToCartAtOnce\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.3.4",
+        "phpstan/phpstan": "^0.12.18"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shohol\\AddMultipleProductsToCartAtOnce\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Shohol\\AddMultipleProductsToCartAtOnce\\AddMultipleProductsToCartAtOnce",
+        "author": "Sergei Hoholin",
+        "label": {
+            "de-DE": "Fügen Sie mehrere Produkte gleichzeitig zum Warenkorb-Plugin hinzu",
+            "en-GB": "Add multiple products to the shopping cart at once plugin"
+        }
+    }
+}
