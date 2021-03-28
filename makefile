@@ -21,3 +21,9 @@ test: ## Starts all Tests
 
 stan: ## Starts the PHPStan Analyser
 	php ./vendor/bin/phpstan --memory-limit=1G analyse .
+
+docker-up:
+	docker-compose up -d
+
+docker-down:
+	docker-compose down --remove-orphans
